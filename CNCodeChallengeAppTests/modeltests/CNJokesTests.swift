@@ -7,14 +7,6 @@
 //
 
 import Foundation
-//
-//  CNJokesTests.swift
-//  CNCodeChallengeApp 23-50-37-413
-//
-//  Created by dexter-local on 21/09/2017.
-//  Copyright © 2017 curiousit. All rights reserved.
-//
-
 import XCTest
 
 @testable import CNCodeChallengeApp
