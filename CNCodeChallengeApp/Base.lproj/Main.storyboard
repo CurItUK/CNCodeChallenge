@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SEb-eA-tFI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Jokes View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CNMainJokesViewController" customModule="CNCodeChallengeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bXr-NG-umz">
+                                <rect key="frame" x="34" y="232" width="307" height="202"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7RN-ed-9U3">
+                                        <rect key="frame" x="0.0" y="0.0" width="307" height="54"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <state key="normal" title="Random Joke"/>
+                                        <connections>
+                                            <action selector="getRandJoke:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XqD-mn-o9k"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIA-eM-HGm">
+                                        <rect key="frame" x="0.0" y="74" width="307" height="54"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <state key="normal" title="Text input"/>
+                                        <connections>
+                                            <segue destination="16i-WW-O4K" kind="show" id="I7f-VO-4oJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxl-eN-KM4">
+                                        <rect key="frame" x="0.0" y="148" width="307" height="54"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <state key="normal" title="Never Ending Jokes"/>
+                                        <connections>
+                                            <segue destination="BTk-be-1u2" kind="show" id="8gI-0M-ESf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bXr-NG-umz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0I6-C3-mM1"/>
+                            <constraint firstItem="bXr-NG-umz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="N1I-sf-jQf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="W0i-bt-Con"/>
+                    <connections>
+                        <outlet property="neverEndingJokesButton" destination="rxl-eN-KM4" id="G4Y-HM-wbr"/>
+                        <outlet property="randomJokeButton" destination="7RN-ed-9U3" id="YL7-Tl-29h"/>
+                        <outlet property="textInputButton" destination="WIA-eM-HGm" id="VQq-6I-xQC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1996" y="122.78860569715144"/>
+        </scene>
+        <!--Never Ending Jokes Table View Controller-->
+        <scene sceneID="L0H-QK-8Ec">
+            <objects>
+                <tableViewController storyboardIdentifier="NeverEndingJokesTableViewController" id="BTk-be-1u2" customClass="CNNeverEndingJokesTableViewController" customModule="CNCodeChallengeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="125" sectionHeaderHeight="28" sectionFooterHeight="28" id="POD-2f-vMh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RandomJokesTableViewCellIdentifier" rowHeight="125" id="WTm-8S-LUk" customClass="CNNeverEndingJokesTableViewCell" customModule="CNCodeChallengeApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="125"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WTm-8S-LUk" id="AeS-d3-pdX">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="124.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PAh-Wz-yRI">
+                                            <rect key="frame" x="8" y="0.0" width="359" height="116.5"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Q1w-GL-eLr">
+                                                    <rect key="frame" x="0.0" y="0.0" width="64" height="78.5"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chucknorris-1" translatesAutoresizingMaskIntoConstraints="NO" id="xk7-Aj-65M">
+                                                            <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="64" id="XeY-hi-OrG"/>
+                                                                <constraint firstAttribute="height" constant="64" id="pkh-qn-0ee"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="234" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyh-1C-I6c">
+                                                            <rect key="frame" x="0.0" y="64" width="64" height="14.5"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="7zP-rz-fq6">
+                                                    <rect key="frame" x="74" y="0.0" width="285" height="41"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="300" text="Joke" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNB-iW-2dk">
+                                                            <rect key="frame" x="0.0" y="0.0" width="38" height="20.5"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOD-Zd-utn">
+                                                            <rect key="frame" x="0.0" y="20.5" width="44" height="20.5"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="leadingMargin" secondItem="PAh-Wz-yRI" secondAttribute="leading" id="6Fg-1Y-DBk"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="PAh-Wz-yRI" secondAttribute="trailing" id="Cgt-CC-sV3"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="PAh-Wz-yRI" secondAttribute="bottom" id="KuI-qY-1Lx"/>
+                                        <constraint firstItem="PAh-Wz-yRI" firstAttribute="top" secondItem="AeS-d3-pdX" secondAttribute="topMargin" constant="-8" id="bfG-It-5oh"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="jokeDetail" destination="HOD-Zd-utn" id="Oh6-HL-qUK"/>
+                                    <outlet property="jokeID" destination="vyh-1C-I6c" id="1eR-1y-ioD"/>
+                                    <outlet property="jokeTitle" destination="FNB-iW-2dk" id="6Zo-d8-snV"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="BTk-be-1u2" id="5Aj-Wd-Kp7"/>
+                            <outlet property="delegate" destination="BTk-be-1u2" id="hbt-aW-fgv"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="tdH-yl-oBJ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BZu-i4-OGD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4130.3999999999996" y="122.78860569715144"/>
+        </scene>
+        <!--Search Here-->
+        <scene sceneID="BrC-5J-RLR">
+            <objects>
+                <tableViewController title="Search Here" id="16i-WW-O4K" customClass="CNTextInputTableViewController" customModule="CNCodeChallengeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="125" sectionHeaderHeight="28" sectionFooterHeight="28" id="X3c-Tf-iaG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <textField key="tableHeaderView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search Joke" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" id="hSD-A8-oii">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="search"/>
+                        </textField>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RandomJokesTableViewCellIdentifier" rowHeight="125" id="Txx-Mr-vdT" customClass="CNNeverEndingJokesTableViewCell" customModule="CNCodeChallengeApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="58" width="375" height="125"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Txx-Mr-vdT" id="Rpb-6I-iiZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="124.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nzv-Hk-5Yv">
+                                            <rect key="frame" x="8" y="0.0" width="359" height="116.5"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GgN-rY-TDF">
+                                                    <rect key="frame" x="0.0" y="0.0" width="64" height="78.5"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chucknorris-1" translatesAutoresizingMaskIntoConstraints="NO" id="T35-SY-sdh">
+                                                            <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="64" id="7My-Bb-g57"/>
+                                                                <constraint firstAttribute="width" constant="64" id="zul-7N-P7o"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="234" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ow-0v-R5J">
+                                                            <rect key="frame" x="0.0" y="64" width="64" height="14.5"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="onl-0U-ANB">
+                                                    <rect key="frame" x="74" y="0.0" width="285" height="41"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="300" text="Joke" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Muw-GR-X57">
+                                                            <rect key="frame" x="0.0" y="0.0" width="38" height="20.5"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccz-Tl-vPk">
+                                                            <rect key="frame" x="0.0" y="20.5" width="44" height="20.5"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="leadingMargin" secondItem="nzv-Hk-5Yv" secondAttribute="leading" id="Nvr-Yy-wdE"/>
+                                        <constraint firstItem="nzv-Hk-5Yv" firstAttribute="top" secondItem="Rpb-6I-iiZ" secondAttribute="topMargin" constant="-8" id="gMR-YG-tiM"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="nzv-Hk-5Yv" secondAttribute="trailing" id="vxx-mP-Sa6"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="nzv-Hk-5Yv" secondAttribute="bottom" id="w9y-Bu-fP8"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="jokeDetail" destination="ccz-Tl-vPk" id="l4B-tJ-TMg"/>
+                                    <outlet property="jokeID" destination="3ow-0v-R5J" id="CvF-Df-awR"/>
+                                    <outlet property="jokeTitle" destination="Muw-GR-X57" id="WZA-Ra-6v4"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="16i-WW-O4K" id="gjq-WQ-0kd"/>
+                            <outlet property="delegate" destination="16i-WW-O4K" id="M1Q-h1-LG5"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="fD3-li-Nyz"/>
+                    <connections>
+                        <outlet property="searchField" destination="hSD-A8-oii" id="SOf-GZ-Deo"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3G6-YL-9aC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3874" y="952"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KWz-8U-QpB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SEb-eA-tFI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Thr-Ub-u3l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="AXO-Qz-ZRn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5y3-qT-FIZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056.8" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chucknorris-1" width="108" height="108"/>
+    </resources>
+</document>

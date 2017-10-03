@@ -1,0 +1,699 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		601720211F7E81FA00C7B8C7 /* CNNeverEndingJokesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601720201F7E81FA00C7B8C7 /* CNNeverEndingJokesTableViewCell.swift */; };
+		601D09F11F7E805D00799CD7 /* CNNeverEndingJokesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601D09F01F7E805D00799CD7 /* CNNeverEndingJokesTableViewController.swift */; };
+		6022446C1F7E939900309B7A /* CNNeverEndingJokesTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6022446B1F7E939900309B7A /* CNNeverEndingJokesTableViewCellViewModel.swift */; };
+		6022446E1F7E93C400309B7A /* CNTextInputJokesTableViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6022446D1F7E93C400309B7A /* CNTextInputJokesTableViewViewModel.swift */; };
+		602244701F7E98A400309B7A /* CNTextInputTableViewControllertests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6022446F1F7E98A400309B7A /* CNTextInputTableViewControllertests.swift */; };
+		602244721F7E994F00309B7A /* CNNeverEndingJokesTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602244711F7E994F00309B7A /* CNNeverEndingJokesTableViewControllerTests.swift */; };
+		602244741F7E99A300309B7A /* CNJokesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602244731F7E99A300309B7A /* CNJokesTests.swift */; };
+		602244761F7E9A9400309B7A /* CNJokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602244751F7E9A9400309B7A /* CNJokeTests.swift */; };
+		602244781F7E9AFE00309B7A /* ValidJokesData.json in Resources */ = {isa = PBXBuildFile; fileRef = 602244771F7E9AFE00309B7A /* ValidJokesData.json */; };
+		6022447A1F7E9B3300309B7A /* ValidSingleJoke.json in Resources */ = {isa = PBXBuildFile; fileRef = 602244791F7E9B3300309B7A /* ValidSingleJoke.json */; };
+		6022447C1F7E9C5F00309B7A /* CNServiceManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6022447B1F7E9C5F00309B7A /* CNServiceManagerTests.swift */; };
+		602244A51F7E9F1B00309B7A /* MockCNMainJokesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602244A41F7E9F1B00309B7A /* MockCNMainJokesViewController.swift */; };
+		602244A71F7E9F5F00309B7A /* MockCNNeverEndingJokesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602244A61F7E9F5F00309B7A /* MockCNNeverEndingJokesTableViewCell.swift */; };
+		602244A91F7E9FF000309B7A /* MockCNNeverEndingJokesTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602244A81F7E9FF000309B7A /* MockCNNeverEndingJokesTableViewCellViewModel.swift */; };
+		60361A661F7E8C9200667CDB /* CNJoke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60361A651F7E8C9200667CDB /* CNJoke.swift */; };
+		60361A681F7E8CC100667CDB /* CNJokes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60361A671F7E8CC100667CDB /* CNJokes.swift */; };
+		60361A6B1F7E8D7D00667CDB /* CNServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60361A6A1F7E8D7D00667CDB /* CNServiceManager.swift */; };
+		60361A6D1F7E8F0A00667CDB /* CNMainJokesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60361A6C1F7E8F0A00667CDB /* CNMainJokesViewModel.swift */; };
+		60361A6F1F7E8F2E00667CDB /* CNNeverEndingJokesTableViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60361A6E1F7E8F2E00667CDB /* CNNeverEndingJokesTableViewViewModel.swift */; };
+		608792D01F80490E001DDBDB /* CNNeverEndingJokesTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608792CF1F80490E001DDBDB /* CNNeverEndingJokesTableViewCellTests.swift */; };
+		60AA9F041F7E77A500B6F56B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AA9F031F7E77A500B6F56B /* AppDelegate.swift */; };
+		60AA9F091F7E77A500B6F56B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60AA9F071F7E77A500B6F56B /* Main.storyboard */; };
+		60AA9F0B1F7E77A500B6F56B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60AA9F0A1F7E77A500B6F56B /* Assets.xcassets */; };
+		60AA9F0E1F7E77A500B6F56B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60AA9F0C1F7E77A500B6F56B /* LaunchScreen.storyboard */; };
+		60AA9F191F7E77A500B6F56B /* CNCodeChallengeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AA9F181F7E77A500B6F56B /* CNCodeChallengeAppTests.swift */; };
+		60AA9F571F7E7AD300B6F56B /* CNConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AA9F561F7E7AD300B6F56B /* CNConstants.swift */; };
+		60AA9F591F7E7B1D00B6F56B /* CNMainJokesViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AA9F581F7E7B1D00B6F56B /* CNMainJokesViewControllerProtocol.swift */; };
+		60AA9F5B1F7E7BA600B6F56B /* CNURLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AA9F5A1F7E7BA600B6F56B /* CNURLSessionProtocol.swift */; };
+		60AA9F5D1F7E7BDA00B6F56B /* CNNeverEndingJokesTableViewCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AA9F5C1F7E7BDA00B6F56B /* CNNeverEndingJokesTableViewCellProtocol.swift */; };
+		60AA9F5F1F7E7CBA00B6F56B /* CNNeverEndingJokesTableViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AA9F5E1F7E7CBA00B6F56B /* CNNeverEndingJokesTableViewControllerProtocol.swift */; };
+		60AA9F611F7E7D7B00B6F56B /* CNNeverEndingJokesTextInputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AA9F601F7E7D7B00B6F56B /* CNNeverEndingJokesTextInputProtocol.swift */; };
+		60AA9F631F7E7EB100B6F56B /* CNMainJokesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AA9F621F7E7EB100B6F56B /* CNMainJokesViewController.swift */; };
+		60AA9F651F7E7EE000B6F56B /* CNTextInputTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AA9F641F7E7EE000B6F56B /* CNTextInputTableViewController.swift */; };
+		60FE4F2C1F7F73BF00235799 /* MockCNNeverEndingJokesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FE4F2B1F7F73BF00235799 /* MockCNNeverEndingJokesTableViewController.swift */; };
+		60FE4F2E1F7F73FD00235799 /* MockCNNeverEndingJokesTableViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FE4F2D1F7F73FD00235799 /* MockCNNeverEndingJokesTableViewViewModel.swift */; };
+		60FE4F301F7F747E00235799 /* MockCNServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FE4F2F1F7F747E00235799 /* MockCNServiceManager.swift */; };
+		60FE4F321F7F74FE00235799 /* MockCNURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FE4F311F7F74FE00235799 /* MockCNURLSession.swift */; };
+		60FE4F341F7F753300235799 /* MockCNURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FE4F331F7F753300235799 /* MockCNURLSessionDataTask.swift */; };
+		60FE4F361F7F7D0900235799 /* MockCNTextInputTableViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FE4F351F7F7D0900235799 /* MockCNTextInputTableViewViewModel.swift */; };
+		60FE4F381F7F7D4600235799 /* MockCNTextInputTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FE4F371F7F7D4600235799 /* MockCNTextInputTableViewController.swift */; };
+		60FE4F3A1F7F7D8900235799 /* UILabelStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FE4F391F7F7D8900235799 /* UILabelStub.swift */; };
+		60FE4F3C1F7F7DAA00235799 /* UITableViewStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FE4F3B1F7F7DAA00235799 /* UITableViewStub.swift */; };
+		60FE4F3E1F7F7DD300235799 /* UIButtonStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FE4F3D1F7F7DD300235799 /* UIButtonStub.swift */; };
+		60FE4F401F7F826600235799 /* CNMainJokesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FE4F3F1F7F826600235799 /* CNMainJokesViewModelTests.swift */; };
+		60FE4F421F7F829800235799 /* CNNeverEndingJokesTableViewViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FE4F411F7F829800235799 /* CNNeverEndingJokesTableViewViewModelTests.swift */; };
+		60FE4F441F7F82EE00235799 /* CNNeverEndingJokesTableViewCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FE4F431F7F82EE00235799 /* CNNeverEndingJokesTableViewCellViewModelTests.swift */; };
+		60FE4F461F7F83E400235799 /* CNTextInputJokesTableViewViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FE4F451F7F83E400235799 /* CNTextInputJokesTableViewViewModelTest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		60AA9F151F7E77A500B6F56B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60AA9EF81F7E77A500B6F56B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60AA9EFF1F7E77A500B6F56B;
+			remoteInfo = CNCodeChallengeApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		601720201F7E81FA00C7B8C7 /* CNNeverEndingJokesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNNeverEndingJokesTableViewCell.swift; sourceTree = "<group>"; };
+		601D09F01F7E805D00799CD7 /* CNNeverEndingJokesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNNeverEndingJokesTableViewController.swift; sourceTree = "<group>"; };
+		6022446B1F7E939900309B7A /* CNNeverEndingJokesTableViewCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNNeverEndingJokesTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		6022446D1F7E93C400309B7A /* CNTextInputJokesTableViewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNTextInputJokesTableViewViewModel.swift; sourceTree = "<group>"; };
+		6022446F1F7E98A400309B7A /* CNTextInputTableViewControllertests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNTextInputTableViewControllertests.swift; sourceTree = "<group>"; };
+		602244711F7E994F00309B7A /* CNNeverEndingJokesTableViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNNeverEndingJokesTableViewControllerTests.swift; sourceTree = "<group>"; };
+		602244731F7E99A300309B7A /* CNJokesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNJokesTests.swift; sourceTree = "<group>"; };
+		602244751F7E9A9400309B7A /* CNJokeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNJokeTests.swift; sourceTree = "<group>"; };
+		602244771F7E9AFE00309B7A /* ValidJokesData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ValidJokesData.json; sourceTree = "<group>"; };
+		602244791F7E9B3300309B7A /* ValidSingleJoke.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ValidSingleJoke.json; sourceTree = "<group>"; };
+		6022447B1F7E9C5F00309B7A /* CNServiceManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNServiceManagerTests.swift; sourceTree = "<group>"; };
+		602244A41F7E9F1B00309B7A /* MockCNMainJokesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCNMainJokesViewController.swift; sourceTree = "<group>"; };
+		602244A61F7E9F5F00309B7A /* MockCNNeverEndingJokesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCNNeverEndingJokesTableViewCell.swift; sourceTree = "<group>"; };
+		602244A81F7E9FF000309B7A /* MockCNNeverEndingJokesTableViewCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCNNeverEndingJokesTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		60361A651F7E8C9200667CDB /* CNJoke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNJoke.swift; sourceTree = "<group>"; };
+		60361A671F7E8CC100667CDB /* CNJokes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNJokes.swift; sourceTree = "<group>"; };
+		60361A6A1F7E8D7D00667CDB /* CNServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNServiceManager.swift; sourceTree = "<group>"; };
+		60361A6C1F7E8F0A00667CDB /* CNMainJokesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNMainJokesViewModel.swift; sourceTree = "<group>"; };
+		60361A6E1F7E8F2E00667CDB /* CNNeverEndingJokesTableViewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNNeverEndingJokesTableViewViewModel.swift; sourceTree = "<group>"; };
+		608792CF1F80490E001DDBDB /* CNNeverEndingJokesTableViewCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNNeverEndingJokesTableViewCellTests.swift; sourceTree = "<group>"; };
+		60AA9F001F7E77A500B6F56B /* CNCodeChallengeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CNCodeChallengeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		60AA9F031F7E77A500B6F56B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		60AA9F081F7E77A500B6F56B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		60AA9F0A1F7E77A500B6F56B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		60AA9F0D1F7E77A500B6F56B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		60AA9F0F1F7E77A500B6F56B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		60AA9F141F7E77A500B6F56B /* CNCodeChallengeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CNCodeChallengeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		60AA9F181F7E77A500B6F56B /* CNCodeChallengeAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNCodeChallengeAppTests.swift; sourceTree = "<group>"; };
+		60AA9F1A1F7E77A500B6F56B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60AA9F561F7E7AD300B6F56B /* CNConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNConstants.swift; sourceTree = "<group>"; };
+		60AA9F581F7E7B1D00B6F56B /* CNMainJokesViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNMainJokesViewControllerProtocol.swift; sourceTree = "<group>"; };
+		60AA9F5A1F7E7BA600B6F56B /* CNURLSessionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNURLSessionProtocol.swift; sourceTree = "<group>"; };
+		60AA9F5C1F7E7BDA00B6F56B /* CNNeverEndingJokesTableViewCellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNNeverEndingJokesTableViewCellProtocol.swift; sourceTree = "<group>"; };
+		60AA9F5E1F7E7CBA00B6F56B /* CNNeverEndingJokesTableViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNNeverEndingJokesTableViewControllerProtocol.swift; sourceTree = "<group>"; };
+		60AA9F601F7E7D7B00B6F56B /* CNNeverEndingJokesTextInputProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNNeverEndingJokesTextInputProtocol.swift; sourceTree = "<group>"; };
+		60AA9F621F7E7EB100B6F56B /* CNMainJokesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNMainJokesViewController.swift; sourceTree = "<group>"; };
+		60AA9F641F7E7EE000B6F56B /* CNTextInputTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNTextInputTableViewController.swift; sourceTree = "<group>"; };
+		60FE4F2B1F7F73BF00235799 /* MockCNNeverEndingJokesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCNNeverEndingJokesTableViewController.swift; sourceTree = "<group>"; };
+		60FE4F2D1F7F73FD00235799 /* MockCNNeverEndingJokesTableViewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCNNeverEndingJokesTableViewViewModel.swift; sourceTree = "<group>"; };
+		60FE4F2F1F7F747E00235799 /* MockCNServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCNServiceManager.swift; sourceTree = "<group>"; };
+		60FE4F311F7F74FE00235799 /* MockCNURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCNURLSession.swift; sourceTree = "<group>"; };
+		60FE4F331F7F753300235799 /* MockCNURLSessionDataTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCNURLSessionDataTask.swift; sourceTree = "<group>"; };
+		60FE4F351F7F7D0900235799 /* MockCNTextInputTableViewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCNTextInputTableViewViewModel.swift; sourceTree = "<group>"; };
+		60FE4F371F7F7D4600235799 /* MockCNTextInputTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCNTextInputTableViewController.swift; sourceTree = "<group>"; };
+		60FE4F391F7F7D8900235799 /* UILabelStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelStub.swift; sourceTree = "<group>"; };
+		60FE4F3B1F7F7DAA00235799 /* UITableViewStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewStub.swift; sourceTree = "<group>"; };
+		60FE4F3D1F7F7DD300235799 /* UIButtonStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonStub.swift; sourceTree = "<group>"; };
+		60FE4F3F1F7F826600235799 /* CNMainJokesViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNMainJokesViewModelTests.swift; sourceTree = "<group>"; };
+		60FE4F411F7F829800235799 /* CNNeverEndingJokesTableViewViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNNeverEndingJokesTableViewViewModelTests.swift; sourceTree = "<group>"; };
+		60FE4F431F7F82EE00235799 /* CNNeverEndingJokesTableViewCellViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CNNeverEndingJokesTableViewCellViewModelTests.swift; path = ../modeltests/CNNeverEndingJokesTableViewCellViewModelTests.swift; sourceTree = "<group>"; };
+		60FE4F451F7F83E400235799 /* CNTextInputJokesTableViewViewModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNTextInputJokesTableViewViewModelTest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		60AA9EFD1F7E77A500B6F56B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60AA9F111F7E77A500B6F56B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		60361A691F7E8D4800667CDB /* services */ = {
+			isa = PBXGroup;
+			children = (
+				60361A6A1F7E8D7D00667CDB /* CNServiceManager.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		60AA9EF71F7E77A500B6F56B = {
+			isa = PBXGroup;
+			children = (
+				60AA9F561F7E7AD300B6F56B /* CNConstants.swift */,
+				60AA9F021F7E77A500B6F56B /* CNCodeChallengeApp */,
+				60AA9F171F7E77A500B6F56B /* CNCodeChallengeAppTests */,
+				60AA9F011F7E77A500B6F56B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		60AA9F011F7E77A500B6F56B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60AA9F001F7E77A500B6F56B /* CNCodeChallengeApp.app */,
+				60AA9F141F7E77A500B6F56B /* CNCodeChallengeAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		60AA9F021F7E77A500B6F56B /* CNCodeChallengeApp */ = {
+			isa = PBXGroup;
+			children = (
+				60361A691F7E8D4800667CDB /* services */,
+				60AA9F271F7E781C00B6F56B /* views */,
+				60AA9F261F7E780400B6F56B /* protocols */,
+				60AA9F251F7E77F700B6F56B /* models */,
+				60AA9F241F7E77E400B6F56B /* viewmodels */,
+				60AA9F231F7E77BA00B6F56B /* supporting files */,
+				60AA9F031F7E77A500B6F56B /* AppDelegate.swift */,
+				60AA9F071F7E77A500B6F56B /* Main.storyboard */,
+			);
+			path = CNCodeChallengeApp;
+			sourceTree = "<group>";
+		};
+		60AA9F171F7E77A500B6F56B /* CNCodeChallengeAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				60AA9F2E1F7E793400B6F56B /* mocks */,
+				60AA9F2D1F7E791700B6F56B /* testdata */,
+				60AA9F2C1F7E78DD00B6F56B /* servicestests */,
+				60AA9F2B1F7E78C400B6F56B /* stubs */,
+				60AA9F2A1F7E788100B6F56B /* modeltests */,
+				60AA9F291F7E785700B6F56B /* viewtests */,
+				60AA9F281F7E783100B6F56B /* viewmodeltests */,
+				60AA9F181F7E77A500B6F56B /* CNCodeChallengeAppTests.swift */,
+				60AA9F1A1F7E77A500B6F56B /* Info.plist */,
+			);
+			path = CNCodeChallengeAppTests;
+			sourceTree = "<group>";
+		};
+		60AA9F231F7E77BA00B6F56B /* supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				60AA9F0A1F7E77A500B6F56B /* Assets.xcassets */,
+				60AA9F0C1F7E77A500B6F56B /* LaunchScreen.storyboard */,
+				60AA9F0F1F7E77A500B6F56B /* Info.plist */,
+			);
+			path = "supporting files";
+			sourceTree = "<group>";
+		};
+		60AA9F241F7E77E400B6F56B /* viewmodels */ = {
+			isa = PBXGroup;
+			children = (
+				60361A6C1F7E8F0A00667CDB /* CNMainJokesViewModel.swift */,
+				60361A6E1F7E8F2E00667CDB /* CNNeverEndingJokesTableViewViewModel.swift */,
+				6022446B1F7E939900309B7A /* CNNeverEndingJokesTableViewCellViewModel.swift */,
+				6022446D1F7E93C400309B7A /* CNTextInputJokesTableViewViewModel.swift */,
+			);
+			path = viewmodels;
+			sourceTree = "<group>";
+		};
+		60AA9F251F7E77F700B6F56B /* models */ = {
+			isa = PBXGroup;
+			children = (
+				60361A651F7E8C9200667CDB /* CNJoke.swift */,
+				60361A671F7E8CC100667CDB /* CNJokes.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		60AA9F261F7E780400B6F56B /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				60AA9F5C1F7E7BDA00B6F56B /* CNNeverEndingJokesTableViewCellProtocol.swift */,
+				60AA9F581F7E7B1D00B6F56B /* CNMainJokesViewControllerProtocol.swift */,
+				60AA9F5A1F7E7BA600B6F56B /* CNURLSessionProtocol.swift */,
+				60AA9F5E1F7E7CBA00B6F56B /* CNNeverEndingJokesTableViewControllerProtocol.swift */,
+				60AA9F601F7E7D7B00B6F56B /* CNNeverEndingJokesTextInputProtocol.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		60AA9F271F7E781C00B6F56B /* views */ = {
+			isa = PBXGroup;
+			children = (
+				60AA9F621F7E7EB100B6F56B /* CNMainJokesViewController.swift */,
+				60AA9F641F7E7EE000B6F56B /* CNTextInputTableViewController.swift */,
+				601D09F01F7E805D00799CD7 /* CNNeverEndingJokesTableViewController.swift */,
+				601720201F7E81FA00C7B8C7 /* CNNeverEndingJokesTableViewCell.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		60AA9F281F7E783100B6F56B /* viewmodeltests */ = {
+			isa = PBXGroup;
+			children = (
+				60FE4F431F7F82EE00235799 /* CNNeverEndingJokesTableViewCellViewModelTests.swift */,
+				60FE4F3F1F7F826600235799 /* CNMainJokesViewModelTests.swift */,
+				60FE4F411F7F829800235799 /* CNNeverEndingJokesTableViewViewModelTests.swift */,
+				60FE4F451F7F83E400235799 /* CNTextInputJokesTableViewViewModelTest.swift */,
+			);
+			path = viewmodeltests;
+			sourceTree = "<group>";
+		};
+		60AA9F291F7E785700B6F56B /* viewtests */ = {
+			isa = PBXGroup;
+			children = (
+				6022446F1F7E98A400309B7A /* CNTextInputTableViewControllertests.swift */,
+				602244711F7E994F00309B7A /* CNNeverEndingJokesTableViewControllerTests.swift */,
+				608792CF1F80490E001DDBDB /* CNNeverEndingJokesTableViewCellTests.swift */,
+			);
+			name = viewtests;
+			path = viewtests/viewtests;
+			sourceTree = "<group>";
+		};
+		60AA9F2A1F7E788100B6F56B /* modeltests */ = {
+			isa = PBXGroup;
+			children = (
+				602244731F7E99A300309B7A /* CNJokesTests.swift */,
+				602244751F7E9A9400309B7A /* CNJokeTests.swift */,
+			);
+			path = modeltests;
+			sourceTree = "<group>";
+		};
+		60AA9F2B1F7E78C400B6F56B /* stubs */ = {
+			isa = PBXGroup;
+			children = (
+				60FE4F391F7F7D8900235799 /* UILabelStub.swift */,
+				60FE4F3B1F7F7DAA00235799 /* UITableViewStub.swift */,
+				60FE4F3D1F7F7DD300235799 /* UIButtonStub.swift */,
+			);
+			path = stubs;
+			sourceTree = "<group>";
+		};
+		60AA9F2C1F7E78DD00B6F56B /* servicestests */ = {
+			isa = PBXGroup;
+			children = (
+				6022447B1F7E9C5F00309B7A /* CNServiceManagerTests.swift */,
+			);
+			path = servicestests;
+			sourceTree = "<group>";
+		};
+		60AA9F2D1F7E791700B6F56B /* testdata */ = {
+			isa = PBXGroup;
+			children = (
+				602244771F7E9AFE00309B7A /* ValidJokesData.json */,
+				602244791F7E9B3300309B7A /* ValidSingleJoke.json */,
+			);
+			path = testdata;
+			sourceTree = "<group>";
+		};
+		60AA9F2E1F7E793400B6F56B /* mocks */ = {
+			isa = PBXGroup;
+			children = (
+				602244A41F7E9F1B00309B7A /* MockCNMainJokesViewController.swift */,
+				602244A61F7E9F5F00309B7A /* MockCNNeverEndingJokesTableViewCell.swift */,
+				602244A81F7E9FF000309B7A /* MockCNNeverEndingJokesTableViewCellViewModel.swift */,
+				60FE4F2B1F7F73BF00235799 /* MockCNNeverEndingJokesTableViewController.swift */,
+				60FE4F2D1F7F73FD00235799 /* MockCNNeverEndingJokesTableViewViewModel.swift */,
+				60FE4F2F1F7F747E00235799 /* MockCNServiceManager.swift */,
+				60FE4F311F7F74FE00235799 /* MockCNURLSession.swift */,
+				60FE4F331F7F753300235799 /* MockCNURLSessionDataTask.swift */,
+				60FE4F351F7F7D0900235799 /* MockCNTextInputTableViewViewModel.swift */,
+				60FE4F371F7F7D4600235799 /* MockCNTextInputTableViewController.swift */,
+			);
+			path = mocks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		60AA9EFF1F7E77A500B6F56B /* CNCodeChallengeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60AA9F1D1F7E77A500B6F56B /* Build configuration list for PBXNativeTarget "CNCodeChallengeApp" */;
+			buildPhases = (
+				60AA9EFC1F7E77A500B6F56B /* Sources */,
+				60AA9EFD1F7E77A500B6F56B /* Frameworks */,
+				60AA9EFE1F7E77A500B6F56B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CNCodeChallengeApp;
+			productName = CNCodeChallengeApp;
+			productReference = 60AA9F001F7E77A500B6F56B /* CNCodeChallengeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		60AA9F131F7E77A500B6F56B /* CNCodeChallengeAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60AA9F201F7E77A500B6F56B /* Build configuration list for PBXNativeTarget "CNCodeChallengeAppTests" */;
+			buildPhases = (
+				60AA9F101F7E77A500B6F56B /* Sources */,
+				60AA9F111F7E77A500B6F56B /* Frameworks */,
+				60AA9F121F7E77A500B6F56B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60AA9F161F7E77A500B6F56B /* PBXTargetDependency */,
+			);
+			name = CNCodeChallengeAppTests;
+			productName = CNCodeChallengeAppTests;
+			productReference = 60AA9F141F7E77A500B6F56B /* CNCodeChallengeAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		60AA9EF81F7E77A500B6F56B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = curiousit;
+				TargetAttributes = {
+					60AA9EFF1F7E77A500B6F56B = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = FDWXGY5835;
+						ProvisioningStyle = Automatic;
+					};
+					60AA9F131F7E77A500B6F56B = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = FDWXGY5835;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 60AA9EFF1F7E77A500B6F56B;
+					};
+				};
+			};
+			buildConfigurationList = 60AA9EFB1F7E77A500B6F56B /* Build configuration list for PBXProject "CNCodeChallengeApp_" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 60AA9EF71F7E77A500B6F56B;
+			productRefGroup = 60AA9F011F7E77A500B6F56B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				60AA9EFF1F7E77A500B6F56B /* CNCodeChallengeApp */,
+				60AA9F131F7E77A500B6F56B /* CNCodeChallengeAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		60AA9EFE1F7E77A500B6F56B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60AA9F0E1F7E77A500B6F56B /* LaunchScreen.storyboard in Resources */,
+				60AA9F0B1F7E77A500B6F56B /* Assets.xcassets in Resources */,
+				60AA9F091F7E77A500B6F56B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60AA9F121F7E77A500B6F56B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6022447A1F7E9B3300309B7A /* ValidSingleJoke.json in Resources */,
+				602244781F7E9AFE00309B7A /* ValidJokesData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60AA9EFC1F7E77A500B6F56B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60AA9F651F7E7EE000B6F56B /* CNTextInputTableViewController.swift in Sources */,
+				601720211F7E81FA00C7B8C7 /* CNNeverEndingJokesTableViewCell.swift in Sources */,
+				60361A6D1F7E8F0A00667CDB /* CNMainJokesViewModel.swift in Sources */,
+				60AA9F5D1F7E7BDA00B6F56B /* CNNeverEndingJokesTableViewCellProtocol.swift in Sources */,
+				60AA9F631F7E7EB100B6F56B /* CNMainJokesViewController.swift in Sources */,
+				60361A681F7E8CC100667CDB /* CNJokes.swift in Sources */,
+				60361A661F7E8C9200667CDB /* CNJoke.swift in Sources */,
+				60AA9F5F1F7E7CBA00B6F56B /* CNNeverEndingJokesTableViewControllerProtocol.swift in Sources */,
+				60AA9F591F7E7B1D00B6F56B /* CNMainJokesViewControllerProtocol.swift in Sources */,
+				6022446C1F7E939900309B7A /* CNNeverEndingJokesTableViewCellViewModel.swift in Sources */,
+				6022446E1F7E93C400309B7A /* CNTextInputJokesTableViewViewModel.swift in Sources */,
+				60361A6B1F7E8D7D00667CDB /* CNServiceManager.swift in Sources */,
+				60AA9F5B1F7E7BA600B6F56B /* CNURLSessionProtocol.swift in Sources */,
+				601D09F11F7E805D00799CD7 /* CNNeverEndingJokesTableViewController.swift in Sources */,
+				60AA9F611F7E7D7B00B6F56B /* CNNeverEndingJokesTextInputProtocol.swift in Sources */,
+				60AA9F571F7E7AD300B6F56B /* CNConstants.swift in Sources */,
+				60AA9F041F7E77A500B6F56B /* AppDelegate.swift in Sources */,
+				60361A6F1F7E8F2E00667CDB /* CNNeverEndingJokesTableViewViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60AA9F101F7E77A500B6F56B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				602244A51F7E9F1B00309B7A /* MockCNMainJokesViewController.swift in Sources */,
+				60FE4F321F7F74FE00235799 /* MockCNURLSession.swift in Sources */,
+				602244701F7E98A400309B7A /* CNTextInputTableViewControllertests.swift in Sources */,
+				602244761F7E9A9400309B7A /* CNJokeTests.swift in Sources */,
+				60FE4F341F7F753300235799 /* MockCNURLSessionDataTask.swift in Sources */,
+				60FE4F2E1F7F73FD00235799 /* MockCNNeverEndingJokesTableViewViewModel.swift in Sources */,
+				602244A71F7E9F5F00309B7A /* MockCNNeverEndingJokesTableViewCell.swift in Sources */,
+				602244741F7E99A300309B7A /* CNJokesTests.swift in Sources */,
+				60FE4F3A1F7F7D8900235799 /* UILabelStub.swift in Sources */,
+				60FE4F3C1F7F7DAA00235799 /* UITableViewStub.swift in Sources */,
+				60FE4F3E1F7F7DD300235799 /* UIButtonStub.swift in Sources */,
+				602244721F7E994F00309B7A /* CNNeverEndingJokesTableViewControllerTests.swift in Sources */,
+				602244A91F7E9FF000309B7A /* MockCNNeverEndingJokesTableViewCellViewModel.swift in Sources */,
+				608792D01F80490E001DDBDB /* CNNeverEndingJokesTableViewCellTests.swift in Sources */,
+				60FE4F381F7F7D4600235799 /* MockCNTextInputTableViewController.swift in Sources */,
+				60FE4F441F7F82EE00235799 /* CNNeverEndingJokesTableViewCellViewModelTests.swift in Sources */,
+				60FE4F361F7F7D0900235799 /* MockCNTextInputTableViewViewModel.swift in Sources */,
+				60FE4F301F7F747E00235799 /* MockCNServiceManager.swift in Sources */,
+				60FE4F2C1F7F73BF00235799 /* MockCNNeverEndingJokesTableViewController.swift in Sources */,
+				60FE4F421F7F829800235799 /* CNNeverEndingJokesTableViewViewModelTests.swift in Sources */,
+				6022447C1F7E9C5F00309B7A /* CNServiceManagerTests.swift in Sources */,
+				60FE4F461F7F83E400235799 /* CNTextInputJokesTableViewViewModelTest.swift in Sources */,
+				60AA9F191F7E77A500B6F56B /* CNCodeChallengeAppTests.swift in Sources */,
+				60FE4F401F7F826600235799 /* CNMainJokesViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		60AA9F161F7E77A500B6F56B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60AA9EFF1F7E77A500B6F56B /* CNCodeChallengeApp */;
+			targetProxy = 60AA9F151F7E77A500B6F56B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		60AA9F071F7E77A500B6F56B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60AA9F081F7E77A500B6F56B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		60AA9F0C1F7E77A500B6F56B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60AA9F0D1F7E77A500B6F56B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		60AA9F1B1F7E77A500B6F56B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		60AA9F1C1F7E77A500B6F56B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		60AA9F1E1F7E77A500B6F56B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FDWXGY5835;
+				INFOPLIST_FILE = CNCodeChallengeApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.uk.curiousit.CNCodeChallengeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		60AA9F1F1F7E77A500B6F56B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FDWXGY5835;
+				INFOPLIST_FILE = CNCodeChallengeApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.uk.curiousit.CNCodeChallengeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		60AA9F211F7E77A500B6F56B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = FDWXGY5835;
+				INFOPLIST_FILE = CNCodeChallengeAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.uk.curiousit.CNCodeChallengeAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CNCodeChallengeApp.app/CNCodeChallengeApp";
+			};
+			name = Debug;
+		};
+		60AA9F221F7E77A500B6F56B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = FDWXGY5835;
+				INFOPLIST_FILE = CNCodeChallengeAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.uk.curiousit.CNCodeChallengeAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CNCodeChallengeApp.app/CNCodeChallengeApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		60AA9EFB1F7E77A500B6F56B /* Build configuration list for PBXProject "CNCodeChallengeApp_" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60AA9F1B1F7E77A500B6F56B /* Debug */,
+				60AA9F1C1F7E77A500B6F56B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60AA9F1D1F7E77A500B6F56B /* Build configuration list for PBXNativeTarget "CNCodeChallengeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60AA9F1E1F7E77A500B6F56B /* Debug */,
+				60AA9F1F1F7E77A500B6F56B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60AA9F201F7E77A500B6F56B /* Build configuration list for PBXNativeTarget "CNCodeChallengeAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60AA9F211F7E77A500B6F56B /* Debug */,
+				60AA9F221F7E77A500B6F56B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 60AA9EF81F7E77A500B6F56B /* Project object */;
+}
